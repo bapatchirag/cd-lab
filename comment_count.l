@@ -2,7 +2,7 @@
 * Count number of single line and multi line comments
 */
 
-allchar [a-zA-Z0-9\n ]
+allchar [a-zA-Z0-9\n\/ ]
 single_line \/\/
 multi_line \/\*{allchar}*\*\/
 ignore {allchar}
