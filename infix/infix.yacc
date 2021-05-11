@@ -26,9 +26,13 @@ E   : E '+' E { $$ = $1 + $3; }
 %%
 
 int yywrap() {}
-int yyerror() {}
 
 int main() {
     printf("Enter infix expression: ");
     yyparse();
+}
+
+int yyerror() {
+    printf("Invalid expression\n");
+    exit(0);
 }
