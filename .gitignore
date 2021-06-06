@@ -1,3 +1,6 @@
 # Input and output files
 input*
 output*
+
+# VSCode config files
+.vscode/
